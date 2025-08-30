@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Productivity Manager</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body style="background-color: #3E4F63">
+    <div id="opening-screen">
+      <h1>Productivity Manager</h1>
+      <div class="opening-container">
+        <img src="https://static.vecteezy.com/system/resources/previews/005/602/860/non_2x/notepad-with-pen-color-icon-taking-notes-to-do-list-planner-action-planning-business-plans-goals-tasks-writing-down-isolated-illustration-vector.jpg" alt="notepad icon" width="293" height="293" class="center">
+      </div>
+      <div class="opening-container">
+         <button id="start" onclick="showScreen('home-screen')">start</button>
+      </div>
+    </div>
+    <div id="home-screen" style="display:none">
+      <div class="container">
+        <p id="date"></p>
+      </div>
+      <div class="progress-ring">
+        <svg class="progress-svg" width="200" height="200">
+            <circle class="progress-bg" cx="100" cy="100" r="90" />
+            <circle class="progress-bar" cx="100" cy="100" r="90" />
+        </svg>
+        <div id="number">0%</div>
+      </div>
+      <div class="task-container">
+        <div class="task">
+          <input id="task-text" type="text" placeholder="type your task . . ." />
+        </div>
+        <button id="add" onclick="addTask()">+</button>
+      </div>
+      <div class="list-container">
+      </div>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+/*starting screen styles*/
+
+h1 {
+    font-size: 36px;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.opening-container{
+    display: flex;
+    flex: auto;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+}
+
+#start {
+    border-radius: 30px;
+    border: 1px solid  #FBFBFB;
+    background-color: #6E8CAF;
+    color: white;
+    width: 239px;
+    height: 62px;
+    margin-top: 50px;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-weight: 200;
+    font-size: 36px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+}
+
+#start:hover {
+  background: #3f5977;
+  color: white;
+}
+
+#start:active {
+  transform: scale(0.95); /* shrink slightly */
+  border: 1px solid  darkgray;
+}
+
+/*home screen styles*/
+
+#home-screen{
+    display: flex;
+    flex:auto;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;   
+}
+
+#date{
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+.progress-ring{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.progress-svg{
+    transform:rotate(-90deg);
+}
+
+#number{
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.progress-bg {
+  fill: none;
+  stroke: #30373F; 
+  stroke-width: 15;
+}
+
+.progress-bar {
+  fill: none;
+  stroke: #6E8CAF; 
+  stroke-width: 15;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  stroke-dasharray: 565;  
+  stroke-dashoffset: 565; 
+  transition: stroke-dashoffset 1s linear;
+}
+
+.task-container{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 30px;
+}
+
+.task{
+    width: 348px;
+    height: 61px;
+    border-radius: 30px;
+    background-color: #252C35;
+    border: 1px solid #252C35;
+    display:flex;
+    align-items: center;
+}
+
+#task-text{
+    background: none;
+    border: none;
+    outline: none;
+    color: rgba(255,255,255,0.44);
+    font-size: 15px;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-weight: 200;
+    text-align: left;
+    padding-left: 20px;  
+}
+
+#add{
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    width: 68px;
+    height: 61px;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+}
+
+#add:hover {
+  border: 1px solid darkgray;
+  color: white;
+}
+
+#add:active {
+  transform: scale(0.95); /* shrink slightly */
+  border: 1px solid  darkgray;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 467px;
+    height: 381px;
+    background-color: #252C35;
+    border: 1px solid rgba(110,140,175,0.65);
+    border-radius: 30px;
+    margin-bottom:40px;
+    margin: 20px auto;
+}
+
+.indiv-list{
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding:20px;
+}
+
+.list-item{
+    color:white;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.list-item:hover{
+    text-decoration: line-through;
+    color: rgba(255,255,255,0.3);
+}
+
+.list-item.completed{
+    text-decoration:line-through;
+    color: rgba(255,255,255,0.5);
+}
+
+.delete-item{
+    padding:5px;
+    color:white;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: right;
+}
+
+.delete-item:hover{
+    color: rgba(255,255,255,0.3);
+}
