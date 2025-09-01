@@ -62,7 +62,7 @@ function addTask(){
     newIndivList.remove(); // removes the whole task row
 
     if (num_tasks > 5){
-       let height = parseInt(getComputedStyle(listContainer).height);
+      let height = parseInt(getComputedStyle(listContainer).height);
       let newHeight = height - 61;
 
       listContainer.style.height = newHeight + "px";
@@ -74,12 +74,10 @@ function addTask(){
       completed_tasks = Math.max(completed_tasks - 1, 0);
     }
 
-
     calculatePercent();
     adjustListSize();
   });
 
-  const listContainer = document.querySelector(".list-container");
   listContainer.appendChild(newIndivList);
   newIndivList.appendChild(newItem);
   newIndivList.appendChild(newDelete);
