@@ -5,6 +5,7 @@ Simple to-do list app for tracking tasks and progress in completing tasks.
 
 ------------------------------------------------------------------------------------
 <h2>Features</h2>
+
 - Allows for typing of various tasks and adding them to their to-do list.
 
 - Can cross off tasks and progress ring will update for the percent of completed tasks.
